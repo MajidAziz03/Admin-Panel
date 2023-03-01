@@ -1,0 +1,52 @@
+.app.dark {
+    background-color: #111;
+    color: gray;
+
+    .navbar {
+        border-color: #999;
+
+
+
+        .search {
+            border-color: #999;
+        }
+    }
+
+    .chartGrid {
+        stroke: #999;
+    }
+
+    .featured {
+        .amount {
+            color: #999;
+        }
+    }
+
+    .sidebar {
+        background-color: #111;
+        border-color: #999;
+
+        .top {
+            border-color: #999;
+
+            .logo {
+                color: gray;
+            }
+        }
+
+        .center {
+            ul {
+                li {
+                    &:hover {
+                        background-color: #999;
+
+                        span {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

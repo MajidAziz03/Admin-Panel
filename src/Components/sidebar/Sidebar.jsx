@@ -1,9 +1,11 @@
 import { AccountCircleOutlined, CreditCard, Dashboard, ExitToApp, InsertChart, LocalShipping, NotificationsNone, PeopleAltOutlined, PsychologyOutlined, SettingsApplications, SettingsSystemDaydreamOutlined, Store } from '@mui/icons-material'
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
+import { Context } from '../../context/context'
 import './sidebar.scss'
 
 const Sidebar = () => {
+    const { darkMode, dispatch } = useContext(Context)
     return (
         <div className='sidebar'>
             <div className="top"><span className='logo'>Majid-Admin</span></div>
@@ -68,8 +70,8 @@ const Sidebar = () => {
                 </ul>
             </div>
             <div className="bottom">
-                <div className="colorOption"></div>
-                <div className="colorOption"></div>
+                <div className="colorOption" onClick={() => dispatch({ type: "DARK" })}></div>
+                <div className="colorOption" onClick={() => dispatch({ type: "LIGHT" })}></div>
             </div>
         </div>
     )
