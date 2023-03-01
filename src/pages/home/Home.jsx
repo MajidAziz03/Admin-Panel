@@ -1,5 +1,7 @@
 import { AccountBalanceWalletOutlined, KeyboardArrowUp, MonetizationOnOutlined, Person2Outlined, ShoppingCartOutlined, VerifiedUserOutlined } from '@mui/icons-material'
 import React from 'react'
+import Chart from '../../Components/charts/Chart'
+import Featured from '../../Components/featured/featured'
 import Navbar from '../../Components/navbar/Navbar'
 import Sidebar from '../../Components/sidebar/Sidebar'
 import Widjets from '../../Components/widjets/widjets'
@@ -29,6 +31,10 @@ const Home = () => {
                         <Widjets title='BALANCE' link='see all details' icon={< AccountBalanceWalletOutlined
                             sx={{ backgroundColor: "rgba(0, 128, 0, 0.2)", color: "green", borderRadius: "5px" }}
                         />} />
+                    </div>
+                    <div className="charts">
+                        <Featured />
+                        <Chart />
                     </div>
                 </div>
             </div>
