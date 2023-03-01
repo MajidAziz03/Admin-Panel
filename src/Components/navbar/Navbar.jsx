@@ -1,4 +1,4 @@
-import { DarkModeOutlined, Fullscreen, LanguageOutlined, Message, MessageOutlined, Notifications, Search, SearchOffOutlined } from '@mui/icons-material'
+import { DarkModeOutlined, Fullscreen, LanguageOutlined, ListOutlined, Message, MessageOutlined, Notifications, Search, SearchOffOutlined } from '@mui/icons-material'
 import { Menu } from '@mui/material'
 import React from 'react'
 import './navbar.scss'
@@ -30,7 +30,7 @@ const Navbar = () => {
                         <MessageOutlined className='icon' />
                     </div>
                     <div className="item">
-                        <Menu className='icon' />
+                        <ListOutlined className='icon' />
                     </div>
                     <div className="item">
                         <img src="https://images.pexels.com/photos/5722932/pexels-photo-5722932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className='avatar' alt="" />
