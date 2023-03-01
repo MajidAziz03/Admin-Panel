@@ -7,7 +7,7 @@ const Sidebar = () => {
     return (
         <div className='sidebar'>
             <div className="top"><span className='logo'>Majid-Admin</span></div>
-            <hr />
+            {/* <hr /> */}
             <div className="center">
                 <ul>
                     <p className="title">Main</p>
