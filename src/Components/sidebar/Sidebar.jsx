@@ -1,7 +1,7 @@
 import { AccountCircleOutlined, CreditCard, Dashboard, ExitToApp, InsertChart, LocalShipping, NotificationsNone, PeopleAltOutlined, PsychologyOutlined, SettingsApplications, SettingsSystemDaydreamOutlined, Store } from '@mui/icons-material'
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './sidebar.scss'
-
 
 const Sidebar = () => {
     return (
@@ -16,10 +16,12 @@ const Sidebar = () => {
                         <span>Dashboard</span>
                     </li>
                     <p className="title">Lists</p>
-                    <li>
-                        <PeopleAltOutlined className='icon' />
-                        <span>Users</span>
-                    </li>
+                    <NavLink to='/users' style={{ textDecoration: "none" }}>
+                        <li>
+                            <PeopleAltOutlined className='icon' />
+                            <span>Users</span>
+                        </li>
+                    </NavLink>
                     <li>
                         <Store className='icon' />
                         <span>Products</span>
