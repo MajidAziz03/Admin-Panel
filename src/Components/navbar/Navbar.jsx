@@ -1,12 +1,27 @@
 import { DarkModeOutlined, Fullscreen, LanguageOutlined, ListOutlined, Message, MessageOutlined, Notifications, Search, SearchOffOutlined } from '@mui/icons-material'
 import { Menu } from '@mui/material'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './navbar.scss'
 
 
+
 const Navbar = () => {
+    const [navabr, setNavabr] = useState(false)
+
+    const changeNav = () => {
+        if (window.scrollY >= 50) {
+            setNavabr(true)
+        }
+        else {
+            setNavabr(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeNav)
+
+
     return (
-        <div className='navbar'>
+        <div className={navabr ? "navbar color" : "navbar"}>
             <div className="wrapper">
                 <div className="search">
                     <input type="text" placeholder='Search...' />

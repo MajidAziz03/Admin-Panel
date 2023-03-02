@@ -5,6 +5,17 @@
     color: #555;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+
+    &.navbar.color {
+        background-color: rgb(218, 202, 202);
+
+        .search {
+            border-color: #999;
+            border-radius: 5px;
+        }
+    }
 
     .wrapper {
         display: flex;
