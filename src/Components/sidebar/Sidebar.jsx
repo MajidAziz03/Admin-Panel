@@ -9,14 +9,15 @@ const Sidebar = () => {
     return (
         <div className='sidebar'>
             <div className="top"><span className='logo'>Majid-Admin</span></div>
-            {/* <hr /> */}
             <div className="center">
                 <ul>
                     <p className="title">Main</p>
-                    <li>
-                        <Dashboard className='icon' />
-                        <span>Dashboard</span>
-                    </li>
+                    <NavLink to='/' active style={{ textDecoration: "none" }}>
+                        <li>
+                            <Dashboard className='icon' />
+                            <span>Dashboard</span>
+                        </li>
+                    </NavLink>
                     <p className="title">Lists</p>
                     <NavLink to='/users' style={{ textDecoration: "none" }}>
                         <li>
